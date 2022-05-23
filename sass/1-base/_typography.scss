@@ -1,0 +1,49 @@
+@use  '../0-abstracts/colors' as c;
+//example $fontDisplay: 'Big Shoulders Display', cursive;
+$fontDisplay:  'Rubik', sans-serif;
+
+body {
+    font-family: $fontDisplay;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1rem;
+
+    header {
+        .hero-text {
+            color: gray;
+            line-height: 1.5rem;
+        }
+    }
+    .contact {
+        h2 {
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+        p {
+            font-size: 0.6rem;
+            font-weight: 400;
+        }
+    }
+    .content {
+        .msg {
+            font-size: 0.7rem;
+            font-weight: 400;
+        }
+    .msg-option {
+        font-size: 0.6rem; 
+        font-weight: 400; 
+        .price {
+            font-size: 0.8rem;
+            font-weight: 700;
+        }
+    }
+        .type-msg {
+            .arrowright {
+                font-size: 1.2rem;
+                font-weight: 700;
+            }
+        }
+
+    }
+}
+
