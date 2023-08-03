@@ -4,50 +4,37 @@ body {
     .wrapper {
         display: flex;
         flex-direction: column;
-        width: 350px;
-        gap: 4rem;
-        margin: 5rem auto;
-        header {
-            max-width: 300px;
-            margin: 0 auto;
+        .header-menu {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            .menu-links{
+                display: flex;
+                flex-direction: row;
+            }
+            .header-social{
+                display: flex;
+                flex-direction: row;
+            }
         }
         main {
-            max-width: 300px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: repeat(1,1fr);
-            grid-template-rows: repeat(3,auto);
-            .whitebox {
-                grid-column: 1/2;
-                grid-row: 1/2;
-            }
+            margin: auto;
         }
     }
 }
 
 @include m.for-desktop-up (1000px) {    
     body {
+
         .wrapper {
-            flex-direction: row-reverse;
-            justify-content: left;
-            max-width: 100vw;
-            width:100vw ;
-            justify-content: left;
-            margin-left: calc(35% - 100px);
-            align-items: center;
-            gap: 10rem;
+        display: flex;
+        flex-direction: column;
 
             header {
-                width: 35vw;
-                margin: 0;
-                flex-basis: 200%;
-                max-width: 450px;
-                text-align: left;
+
             }
             main {
-                width: 35vw;
-                margin: 0;
-                flex-basis: 100%;
+
             }
         }
     }
